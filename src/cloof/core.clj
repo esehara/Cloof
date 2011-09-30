@@ -24,4 +24,6 @@
            (route/files "/")
            (route/not-found "Page not found"))
 
-(run-jetty (wrap! rts (:charset "utf8")) {:port 8080})
+(defn -main []
+  (let [port (Integer/parseInt (System/getenv "PORT"))]
+    (run-jetty (wrap! rts (:charset "utf8")) {:port port})))
