@@ -1,0 +1,93 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-image: url('./img/back.png');
+}
+
+div#main{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin:auto;
+    width: 80%;
+    background-color: #FFF; 
+    border-left: solid 6px #060;
+    border-right: solid 6px #060;
+}
+
+div#main hr{
+    border:none;
+    height:10px;
+    background-image:url("./img/line002.gif");
+    background-repeat:repeat-x;
+    background-position:center center;
+}
+div#gallery-out{
+    margin-top:32px;
+    position:relative;
+}
+
+div#gallery-out img#icon{
+    position:absolute;
+    top: -38px;
+}
+
+div#gallery:after {
+    content:".";
+    display:block;
+    height:0px;
+    clear:both;
+    visibility:hidden;
+}
+div#gallery { position:absolute;
+              top:0px;
+              display:inline-table; 
+              background-image: url("./img/block.png");
+              border:1px solid grey;
+              padding: 6px;}
+
+/* Hides from Mac IE \*/
+* html div#gallery { height:1px; }
+div#gallery { display:block; }
+/* */
+
+div#gallery img{
+    margin:10px;
+}
+
+div#header{
+    background-image: url("./img/header-back.png");
+    background-repeat:repeat-x;
+}
+
+div#header h1#header{
+    background-image:url("./img/robotanime.gif");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    font-size: 72px;
+    margin:0px;
+    padding-top: 0px;
+    text-align:right;
+    color: #DFF;
+    text-shadow: 0px 12px 24px #ACF;
+}
+div#nav {
+	vertical-align: top;
+	padding:0px;
+	margin:0px;
+	width: 100%;
+	height: 46px;
+	background-color: #138C03;
+	background-image: url("./img/navback.png");
+	background-repeat:repeat-x;
+}
+
+div#person h2{
+    text-shadow: 2px 2px 2px gray;
+    border-bottom: solid 2px #300;
+}
+
+div#content{
+    padding: 1em;
+}
+
