@@ -32,23 +32,27 @@ div#gallery-out img#icon{
     top: -38px;
 }
 
-div#gallery:after {
+div.columbase:after {
     content:".";
     display:block;
     height:0px;
     clear:both;
     visibility:hidden;
 }
+
+div.columbase{
+    display:inline-table; 
+}
+
 div#gallery { position:absolute;
               top:0px;
-              display:inline-table; 
               background-image: url("./img/block.png");
               border:1px solid grey;
               padding: 6px;}
 
 /* Hides from Mac IE \*/
-* html div#gallery { height:1px; }
-div#gallery { display:block; }
+* html div.columbase { height:1px; }
+div.columbase { display:block; }
 /* */
 
 div#gallery img{
@@ -89,5 +93,28 @@ div#person h2{
 
 div#content{
     padding: 1em;
+}
+
+div#works{
+    position:relative;
+}
+
+div#works div#left{
+    border-right: dotted 1px gray; 
+    width:31%;
+    float:left;
+}
+
+div#works div#center{
+    padding-left:1%;
+    width:31%;
+    float:left;
+}
+
+div#works div#right{
+    padding-left:1%;
+    border-left: dotted 1px gray;
+    width:31%;
+    float:left;
 }
 
